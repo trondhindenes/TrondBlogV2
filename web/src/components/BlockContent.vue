@@ -9,6 +9,7 @@
 
 <script>
 import PortableText from 'sanity-blocks-vue-component'
+import 'prism-es6/components/prism-python'
 
 export default {
   props: {
@@ -23,6 +24,7 @@ export default {
         types: {
           mainImage: ({ node }) => (
             <figure>
+              <pre>{JSON.stringify(node)}</pre>
               <img
                 src={this.$urlForImage(node, this.$static.metadata.sanityOptions)
                   .auto('format')
@@ -31,6 +33,13 @@ export default {
               />
               <figcaption>{node.caption}</figcaption>
             </figure>
+          ),
+          code: ({ node }) => (
+            <div v-highlight>
+              <pre class={''.concat('codeblock language-', node.language)}>
+                <code>{node.code}</code>
+              </pre>
+            </div>
           )
         }
       }
@@ -49,3 +58,13 @@ export default {
   }
 }
 </static-query>
+
+<style lang="scss">
+.codeblock {
+  margin: 0 auto;
+  --bg-code: rgba(0, 0, 0, 0.16);
+  --bg-color: rgba(0, 0, 0, 0);
+  //background-color:  #20a7e00f;
+  --border-color: rgba(0, 0, 0, 0)
+}
+</style>

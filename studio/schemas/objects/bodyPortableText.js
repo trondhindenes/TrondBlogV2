@@ -48,6 +48,10 @@ export default {
     {
       type: 'mainImage',
       options: {hotspot: true}
+    },
+    {
+      title: 'Codeblock',
+      type: 'code'
     }
   ]
 }
