@@ -24,7 +24,6 @@ export default {
         types: {
           mainImage: ({ node }) => (
             <figure>
-              <pre>{JSON.stringify(node)}</pre>
               <img
                 src={this.$urlForImage(node, this.$static.metadata.sanityOptions)
                   .auto('format')
@@ -61,9 +60,9 @@ export default {
 
 <style lang="scss">
 .codeblock {
-  margin: 0 auto;
-  --bg-code: rgba(0, 0, 0, 0.16);
-  --bg-color: rgba(0, 0, 0, 0);
+  //margin: 0 auto;
+  //--bg-code: rgba(0, 0, 0, 0);
+  //--bg-color: rgba(0, 0, 0, 0);
   //background-color:  #20a7e00f;
   --border-color: rgba(0, 0, 0, 0)
 }

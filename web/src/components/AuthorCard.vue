@@ -12,7 +12,7 @@
     <h1 v-if="showTitle" class="author__site-title">{{ $static.settings.title }}</h1>
     <p class="author__intro">{{$static.settings.author.name}}</p>
     <p class="author__links">
-      <a href="//twitter.com/trondhindenes">Follow on Twitter</a>
+      <a href="//twitter.com/trondhindenes" target="top">Follow on Twitter</a>
     </p>
   </div>
 </template>
