@@ -1,0 +1,16 @@
+{
+  "name": "util_scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate_block.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sanity/block-tools": "^0.147.6",
+    "@sanity/schema": "^0.147.6",
+    "line-reader": "^0.4.0"
+  }
+}
