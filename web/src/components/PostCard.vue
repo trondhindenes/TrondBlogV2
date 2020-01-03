@@ -3,14 +3,14 @@
     <div class="post-card__header">
       <g-image
         alt="Cover image"
-        v-if="post.mainImage"
+        v-if="post.mainImage && post.mainImage.asset"
         class="post-card__image"
         :src="$urlForImage(post.mainImage, $page.metadata.sanityOptions).height(440).width(800).auto('format').url()"
       />
     </div>
     <div class="post-card__content">
       <h2 class="post-card__title" v-html="post.title" />
-      <block-content :blocks="post._rawExcerpt" />
+      <block-content v-if="post._rawExcerpt" :blocks="post._rawExcerpt" />
 
       <post-meta class="post-card__meta" :post="post" />
       <post-tags class="post-card__tags" :post="post" />

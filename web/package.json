@@ -13,7 +13,8 @@
     "gridsome": "^0.7.1",
     "gridsome-source-sanity": "^1.0.1",
     "sanity-blocks-vue-component": "^0.1.0",
-    "vue-code-highlight": "^0.7.4"
+    "vue-code-highlight": "^0.7.4",
+    "vuejs-logger": "^1.5.3"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
