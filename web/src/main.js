@@ -9,6 +9,7 @@ import urlForImage from './utils/urlForImage'
 
 import VueCodeHighlight from 'vue-code-highlight';
 import VueLogger from 'vuejs-logger';
+
 const isProduction = process.env.NODE_ENV === 'production';
 const options = {
   isEnabled: true,

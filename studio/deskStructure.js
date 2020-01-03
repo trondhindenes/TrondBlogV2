@@ -23,6 +23,10 @@ export default () =>
         .schemaType('post')
         .child(S.documentTypeList('post').title('Blog posts')),
       S.listItem()
+        .title('markdown Blog posts')
+        .schemaType('markDownPost')
+        .child(S.documentTypeList('markDownPost').title('Markdown Blog posts')),
+      S.listItem()
         .title('Authors')
         .icon(MdPerson)
         .schemaType('author')

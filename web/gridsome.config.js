@@ -18,7 +18,8 @@ module.exports = {
     'Trond Hindenes\' blog about computer stuff.',
 
   templates: {
-    SanityPost: '/:slug__current'
+    SanityPost: '/:slug__current',
+    SanityMarkDownPost: '/:title'
   },
 
   plugins: [
